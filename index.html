@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMzC1X8L/P9n5Vkk6G3D4k6g1IbF6XgL+hnc3F" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <video class="header-video" autoplay muted loop>
+            <source src="Imagens/LB-Silhouette R35 GTR  ｜ 4K.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <nav>
+                <p class="brand">Performance</p>
+                <ul>
+                    <li class="dropdown">
+                        <button class="menu-button" aria-label="Menu">
+                            <i class="fas fa-bars"></i> Menu
+                        </button>
+                        <ul class="dropdown-content">
+                            <li><a href="#catalog">Catálogo</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><button aria-label="Login">Login</button></li>
+                </ul>
+            </nav>
+            <div class="header-block">
+                <div class="text">
+                    <p class="p">Acelere seus sentidos</p>
+                    <h2>Viva a experiência JDM</h2>
+                    <p class="p1">Performance, estilo e paixão em cada curva</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+                <p>Explore nossos projetos e encontre o que precisa.</p>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Pesquisar projetos...">
+                <button onclick="searchProducts()">Pesquisar</button>
+            </div>
+            <div class="title-wrapper-catalog">
+                <h3>Catálogo de Carros</h3>
+            </div>
+            <div id="cardWrapper" class="card-wrapper">
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/r34-header-removebg-preview.png" alt="Nissan Skyline GT-R V-Spec II R34">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan Skyline GT-R V-Spec II R34</h4>
+                        <p>Potência: 520 CV</p>
+                        <p>Ano: 2001</p>
+                        <h3>R$ 700.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/s15.png" alt="Nissan Silvia S15 2JZ SPEC R">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan Silvia S15 2JZ SPEC R</h4>
+                        <p>Potência: 600 CV</p>
+                        <p>Ano: 1998</p>
+                        <h3>R$ 650.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/rx7.png" alt="Mazda RX7 FD3S">
+                    </div>
+                    <div class="card-info">
+                        <h4>Mazda RX7 FD3S</h4>
+                        <p>Potência: 500 CV</p>
+                        <p>Ano: 1992</p>
+                        <h3>R$ 800.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/350Z.png" alt="Nissan 350z 2JZ">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan 350z 2JZ</h4>
+                        <p>Potência: 600 CV</p>
+                        <p>Ano: 2003</p>
+                        <h3>R$ 350.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/240SX.png" alt="Nissan 240sx S15 Front End">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan 240sx S15 Front End</h4>
+                        <p>Potência: 400 CV</p>
+                        <p>Ano: 1991</p>
+                        <h3>R$ 450.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/MX5.png" alt="Mazda Miata MX-5 NA">
+                    </div>
+                    <div class="card-info">
+                        <h4>Mazda Miata MX-5 NA</h4>
+                        <p>Potência: 210 CV</p>
+                        <p>Ano: 1992</p>
+                        <h3>R$ 75.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/R34 VSPEC.png" alt="Nissan Skyline R34 GTR VSPEC">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan Skyline R34 GTR VSPEC</h4>
+                        <p>Potência: 600 CV</p>
+                        <p>Ano: 2000/2001</p>
+                        <h3>R$ 1.000.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/S15 Spec R.png" alt="Nissan Silvia S15 Spec R">
+                    </div>
+                    <div class="card-info">
+                        <h4>Nissan Silvia S15 Spec R</h4>
+                        <p>Potência: 350 CV</p>
+                        <p>Ano: 1999</p>
+                        <h3>R$ 215.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-image">
+                        <img src="Imagens/AE86.png" alt="Nissan Silvia S15 Spec R">
+                    </div>
+                    <div class="card-info">
+                        <h4>Toyota Corolla AE86 Levin</h4>
+                        <p>Potência: 220 CV</p>
+                        <p>Ano: 1984</p>
+                        <h3>R$ 100.000,00 BRL</h3>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="content">
+            <div class="title-wrapper-about">
+                <p>  </p>
+                <h3>  </h3>
+            </div>
+            <div class="about-content">
+                <div class="left">
+                    <img src="Imagens/DSC_1312-1920x0-c-default.jpg" alt="Sobre nós">
+                </div>
+                <div class="right">
+                    <h3>Sobre a Performance</h3>
+                    <p>A Performance nasceu do desejo de um produto dificilmente encontrado no mercado brasileiro, de forma fácil, rápida e eficiente. <br>Nós da Performance trazemos justamente essa necessidade, priorizando principalmente a agilidade e honestidade, com produtos de extrema qualidade.
+                        A nossa equipe é extremamente qualificada, nós nos esforçamos para oferecer a melhor seleção, preço e qualidade em nosso setor, nossos produtos possuem nota e garantia, com o melhor pré e pós venda.                   
+                        <br>Priorizamos o mercado interno, com produtos de altissima qualidade, com preços e prazos para trazer facilidade e agilidade na hora da compra. 
+                        <br>Amigo(a), queremos te agradecer por estar aqui conhecendo nossa loja Online. 
+                        Sentimo-nos honrados em poder servi-lo, lhe proporcionar a melhor experiência na hora da compra e garantia de satisfação. Agir de forma rapida e transparente é o nosso principal diferencial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="content">
+            <div class="title-wrapper-features">
+                <p>What you can do</p>
+                <h3>Features</h3>
+            </div>
+            <div class="feature-card-block">
+                <div class="feature-card-item">
+                    <img src="path/to/icon1.png" alt="Feature 1 Icon">
+                    <div class="feature-text-content">
+                        <h4>Perfomance</h4>
+                        <p>Uma loja completa especializada em importação e preparação do seu projeto Drift car / JDM dos sonhos.</p>
+                    </div>
+                </div>
+                <div class="feature-card-item">
+                    <img src="path/to/icon2.png" alt="Feature 2 Icon">
+                    <div class="feature-text-content">
+                        <h4>Duvidas ? Entre em contato conosco!</h4>
+                        <p>( 41 ) 99307-5234 <br>Sales@perfomance.com</p>
+                    </div>
+                </div>
+                <div class="feature-card-item">
+                    <img src="path/to/icon3.png" alt="Feature 3 Icon">
+                    <div class="feature-text-content">
+                        <h4>Onde nos encontrar?</h4>
+                        <p>Curitiba - PR <br>
+                            Bacacheri <br>Av. Pref. Erasto Gaertner, 2.587</p>
+                    </div>
+                </div>
+                <div class="feature-card-item">
+                    <img src="path/to/icon4.png" alt="Feature 4 Icon">
+                    <div class="feature-text-content">
+                        <h4>DRIFT FOR U COMERCIO LTD <br><br>CNPJ 41.278.108/0001-28</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="main">
+            <div class="content footer-links">
+                <div class="footer-company">
+                    <h4>Company</h4>
+                    <h6><a href="#about">About</a></h6>
+                    <h6><a href="#contact">Contact</a></h6>
+                </div>
+                <div class="footer-rental">
+                    <h4>Rental</h4>
+                    <h6>Self-Drive</h6>
+                    <h6>Chauffer-Driven</h6>
+                    <h6>Help</h6>
+                </div>
+                <div class="footer-social">
+                    <h4>Stay connected</h4>
+                    <!-- Social links here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Função de pesquisa para filtrar produtos
+        function searchProducts() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cardWrapper = document.getElementById('cardWrapper');
+            const cards = cardWrapper.getElementsByClassName('card-item');
+
+            for (let i = 0; i < cards.length; i++) {
+                const cardTitle = cards[i].getElementsByTagName('h4')[0].textContent.toLowerCase();
+                if (cardTitle.includes(input)) {
+                    cards[i].style.display = ""; 
+                } else {
+                    cards[i].style.display = "none"; 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
