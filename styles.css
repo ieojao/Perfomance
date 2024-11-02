@@ -529,14 +529,15 @@ s
 .title-wrapper-features { 
   padding: 20px 0px; 
 } 
- 
+.feature-text-content h4{
+  color: #33bdff;
+}
 .feature-card-block { 
-  max-width: 1000px; 
-  min-width: 300px; 
-  height: 600px; 
+  max-width: 5000px; 
+  min-width: 900px; 
+  height: 200px; 
   background: #091944b0; 
   margin: 0 auto; 
-  border-radius: 8px; 
   z-index: 10; 
   padding: 50px; 
   display: grid;
@@ -553,8 +554,6 @@ grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   flex-direction: row; 
   align-items: center; 
   justify-content: space-around; 
-  border: 1px solid #dedede3b; 
-  border-radius: 4px; 
 } 
  
 .feature-text-content { 
@@ -563,8 +562,8 @@ grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 } 
  
 .feature-card-item img { 
-  width: 64px; 
-  height: 64px; 
+  width: 100px; 
+  height: 100px; 
 } 
  
 /* Footer */ 
