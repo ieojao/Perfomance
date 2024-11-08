@@ -28,7 +28,7 @@
                             <li><a href="#features">Features</a></li>
                         </ul>
                     </li>
-                    <li><button aria-label="Login">Login</button></li>
+                    <li><button aria-label="Login" onclick="redirectToLogin()">Login</button></li>
                 </ul>
             </nav>
             <div class="header-block">
@@ -40,7 +40,6 @@
             </div>
         </div>
     </header>
-    
     <section id="catalog">
         <div class="content">
             <div class="title-wrapper-catalog">
@@ -238,22 +237,6 @@
             </div>
         </div>
     </section>
-    <script>
-        // Função de pesquisa para filtrar produtos
-        function searchProducts() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const cardWrapper = document.getElementById('cardWrapper');
-            const cards = cardWrapper.getElementsByClassName('card-item');
-
-            for (let i = 0; i < cards.length; i++) {
-                const cardTitle = cards[i].getElementsByTagName('h4')[0].textContent.toLowerCase();
-                if (cardTitle.includes(input)) {
-                    cards[i].style.display = ""; 
-                } else {
-                    cards[i].style.display = "none"; 
-                }
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

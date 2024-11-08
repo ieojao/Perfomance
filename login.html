@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Performance</title>
+    <link rel="stylesheet" href="login.html">
+</head>
+<body>
+    <header>
+        <h1>Performance - Login</h1>
+    </header>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Entrar</h2>
+            <form id="loginForm" onsubmit="return validateLogin(event)">
+                <div class="error-message" id="errorMessage"></div>
+                <input type="text" id="username" placeholder="Usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para validar o login
+        function validateLogin(event) {
+            event.preventDefault();  // Evita o envio do formulário
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            // Lógica simples de validação de login
+            if (username === 'admin' && password === '123456') {
+                // Caso o login seja bem-sucedido
+                alert('Login realizado com sucesso!');
+                window.location.href = 'index.html'; // Redireciona para a página principal
+            } else {
+                // Exibe uma mensagem de erro
+                errorMessage.textContent = 'Usuário ou senha incorretos. Tente novamente.';
+            }
+        }
+    </script>
+</body>
+</html>
